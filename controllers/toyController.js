@@ -6,7 +6,8 @@ exports.getAllToys = catchAsync(async (req, res, next) => {
   const features = new ApiFeatures(Toy.find(), req.query)
     .filter()
     .sort()
-    .limitFields();
+    .limitFields()
+    .paginate();
 
   const toys = await features.query;
 

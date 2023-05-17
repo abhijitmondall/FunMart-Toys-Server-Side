@@ -46,6 +46,17 @@ class ApiFeatures {
 
     return this;
   }
+
+  paginate() {
+    const queryObj = { ...this.queryString };
+    const limitPerPage = queryObj.limit * 1 || 20;
+    const page = queryObj.page * 1 || 1;
+    const skips = (page - 1) * limitPerPage;
+
+    this.query = this.query.skip(skips).limit(limitPerPage);
+
+    return this;
+  }
 }
 
 module.exports = ApiFeatures;
