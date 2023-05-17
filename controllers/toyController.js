@@ -1,5 +1,6 @@
 const Toy = require('../models/toyModel');
 const ApiFeatures = require('../utils/apiFeatures');
+const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 
 exports.getAllToys = catchAsync(async (req, res, next) => {
@@ -16,5 +17,19 @@ exports.getAllToys = catchAsync(async (req, res, next) => {
     status: 'success',
     results: toys.length,
     toys,
+  });
+});
+
+exports.getToy = catchAsync(async (req, res, next) => {
+  const toy = await Toy.findById(req.params.id);
+
+  if (!toy)
+    return next(
+      new AppError(`No toy found with this ID: ${req.params.id}`, 404)
+    );
+
+  res.status(200).json({
+    status: 'success',
+    toy,
   });
 });

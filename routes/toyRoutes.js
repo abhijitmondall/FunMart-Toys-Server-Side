@@ -5,4 +5,6 @@ const router = express.Router();
 
 router.route('/').get(toyController.getAllToys);
 
+router.route('/:id').get(toyController.getToy);
+
 module.exports = router;
