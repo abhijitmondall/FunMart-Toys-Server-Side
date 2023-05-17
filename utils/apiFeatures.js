@@ -33,6 +33,19 @@ class ApiFeatures {
 
     return this;
   }
+
+  limitFields() {
+    if (this.queryString.fields) {
+      const queryObj = { ...this.queryString };
+      const includedFields = queryObj.fields.split(',').join(' ');
+
+      this.query = this.query.select(includedFields);
+    } else {
+      this.query = this.query.select('-__v');
+    }
+
+    return this;
+  }
 }
 
 module.exports = ApiFeatures;
