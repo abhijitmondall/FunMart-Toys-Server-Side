@@ -25,7 +25,7 @@ const toySchema = new mongoose.Schema({
   },
 
   price: {
-    type: String,
+    type: Number,
     required: [true, 'A Toy must have a price!'],
   },
 
