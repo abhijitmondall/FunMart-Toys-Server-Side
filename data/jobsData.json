@@ -1,0 +1,110 @@
+[
+  {
+    "logo": "https://i.ibb.co/jVF8DwV/google.png",
+    "title": "Technical Database Engineer",
+    "companyName": "Google LLC",
+    "jobType": ["Remote", "Full Time"],
+    "location": "San Francisco, CA",
+    "salary": 100,
+    "ratingsAverage": 4.9,
+    "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "requirements": "Bachelor degree to complete any reputational university.",
+    "experiences": "2-3 Years in this field.",
+    "contact": {
+      "phone": "+1-555-555-5555",
+      "email": "careers@abccorp.com",
+      "address": "123 Main St, San Francisco, CA 94102"
+    }
+  },
+  {
+    "logo": "https://i.ibb.co/Zfq5gd3/netflix.png",
+    "title": "Front-end Web Developer",
+    "companyName": "Netflix",
+    "jobType": ["Onsite", "Full Time"],
+    "location": "New York, USA",
+    "salary": 80,
+    "ratingsAverage": 4.8,
+    "description": "As a front-end web developer, you will be responsible for developing and implementing user interfaces for websites and web applications. This includes creating web pages and interfaces, coding interactive features, and testing for usability and functionality.",
+    "responsibility": "Collaborating with the design team and other developers to create responsive and user-friendly websites and web applications. Developing and maintaining website features using HTML, CSS, and JavaScript. Ensuring website optimization for maximum speed and scalability. Conducting user research and usability testing to identify and improve website usability.",
+    "requirements": "Bachelor's degree in Computer Science or related field. Proficiency in HTML, CSS, JavaScript, and jQuery. Experience with front-end frameworks such as React or Angular.",
+    "experiences": "3+ years of experience in front-end web development.",
+    "contact": {
+      "phone": "123-456-7890",
+      "email": "jobs@abccompany.com",
+      "address": "123 Main St, New York, NY 10001"
+    }
+  },
+  {
+    "logo": "https://i.ibb.co/f06q49D/tesla.png",
+    "title": "Software Engineer",
+    "companyName": "Tesla",
+    "jobType": ["Remote", "Full Time"],
+    "location": "London, UK",
+    "salary": 90,
+    "ratingsAverage": 5,
+    "description": "As a software engineer, you will be responsible for designing, developing, and maintaining software systems and applications. This includes writing code, debugging software issues, and collaborating with cross-functional teams to ensure software quality and usability.",
+    "responsibility": "Designing, developing, and maintaining software applications and systems. Writing clean, efficient, and well-documented code. Debugging and resolving software issues. Collaborating with cross-functional teams to ensure software quality and usability. Conducting code reviews and ensuring code meets software development standards.",
+    "requirements": "Bachelor's degree in Computer Science or related field. Proficiency in one or more programming languages such as Java, Python, or C++. Experience with software development methodologies such as Agile or Scrum.",
+    "experiences": "5+ years of experience in software engineering.",
+    "contact": {
+      "phone": "+44-20-1234-5678",
+      "email": "careers@xyzcorp.com",
+      "address": "1 Oxford St, London W1D 2DA, UK"
+    }
+  },
+  {
+    "logo": "https://i.ibb.co/cw25XL4/airbnb.png",
+    "title": "Marketing Manager",
+    "companyName": "Airbnb",
+    "jobType": ["Onsite", "Full Time"],
+    "location": "New York, NY",
+    "salary": 100,
+    "ratingsAverage": 5,
+    "description": "ABC Corp is seeking an experienced Marketing Manager to lead our marketing efforts. In this role, you will be responsible for developing and executing marketing campaigns, managing our social media accounts, and overseeing our marketing team.",
+    "responsibility": "Developing and executing marketing campaigns that drive leads and conversions. Managing and growing our social media accounts. Overseeing a team of marketing professionals.",
+    "requirements": "Bachelor's degree in Marketing, Business, or a related field. 5+ years of experience in marketing. Experience with digital marketing channels and platforms.",
+    "experiences": "5+ Years in this field.",
+    "contact": {
+      "phone": "555-555-1234",
+      "email": "jobs@abccorp.com",
+      "address": "123 Main St, New York, NY 10001"
+    }
+  },
+  {
+    "logo": "https://i.ibb.co/jVF8DwV/google.png",
+    "title": "Data Scientist",
+    "companyName": "Google LLC",
+    "jobType": ["Remote", "Full Time"],
+    "location": "Bangalore, India",
+    "salary": 120,
+    "ratingsAverage": 4.9,
+    "description": "As a data scientist, you will be responsible for analyzing and interpreting complex data to inform business decisions. This includes collecting and cleaning data, building statistical models, and presenting insights to stakeholders.",
+    "responsibility": "Collecting and cleaning data from various sources. Building statistical models to analyze data and inform business decisions. Presenting insights and recommendations to stakeholders. Collaborating with cross-functional teams to develop data-driven solutions. Staying up-to-date with emerging trends in data science and technology.",
+    "requirements": "Bachelor's or Master's degree in Statistics, Computer Science, or related field. Proficiency in statistical analysis tools such as R or Python. Experience with data visualization tools such as Tableau or PowerBI.",
+    "experiences": "3-5 years of experience in data science or related field.",
+    "contact": {
+      "phone": "+91-80-1234-5678",
+      "email": "careers@pqr.com",
+      "address": "123 Main Road, Bangalore 560001, India"
+    }
+  },
+  {
+    "logo": "https://i.ibb.co/f06q49D/tesla.png",
+    "title": "Product Manager",
+    "companyName": "Tesla",
+    "jobType": ["Onsite", "Full Time"],
+    "location": "San Francisco, CA",
+    "salary": 150,
+    "ratingsAverage": 5,
+    "description": "As a Product Manager, you will be responsible for defining and executing the product vision and roadmap. You will work closely with cross-functional teams to gather requirements, develop user stories, and prioritize features. You will also be responsible for ensuring that the product meets business objectives and customer needs.",
+    "responsibility": "Defining and executing the product vision and roadmap. Gathering requirements and developing user stories. Prioritizing features and setting product milestones. Working closely with cross-functional teams to ensure that the product meets business objectives and customer needs. Conducting market research and competitive analysis.",
+    "requirements": "Bachelor's degree in Business Administration, Computer Science, or related field. Experience in product management or related field. Strong analytical and problem-solving skills. Excellent written and verbal communication skills.",
+    "experiences": "3+ years of experience in product management.",
+    "contact": {
+      "phone": "+1-555-555-5555",
+      "email": "careers@abccorp.com",
+      "address": "123 Main St, San Francisco, CA 94102"
+    }
+  }
+]
