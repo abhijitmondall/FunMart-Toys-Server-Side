@@ -5,24 +5,29 @@ dotenv.config({
   path: './config.env',
 });
 
-const Jobs = require('./../models/jobModel');
+const Toys = require('../models/toyModel');
 
 const DB = process.env.DATABASE.replace(
   '<PASSWORD>',
   process.env.DATABASE_PASSWORD
 );
 
-mongoose.connect(DB).then((con) => {
-  console.log('DB connection established');
-});
+mongoose
+  .connect(DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then((con) => {
+    console.log('DB connection established');
+  });
 
 // Read JSON File
-const jobs = JSON.parse(fs.readFileSync(`${__dirname}/jobsData.json`, 'utf8'));
+const toys = JSON.parse(fs.readFileSync(`${__dirname}/toysData.json`, 'utf8'));
 
 // Import Data Into DB
 const importData = async () => {
   try {
-    await Jobs.create(jobs);
+    await Toys.create(toys);
     console.log('Data Imported Successfully');
   } catch (err) {
     console.log('Failed to Import', err);
@@ -33,7 +38,7 @@ const importData = async () => {
 // Delete All Data From DB
 const deleteData = async () => {
   try {
-    await Jobs.deleteMany();
+    await Toys.deleteMany();
     console.log('Data Deleted Successfully');
   } catch (err) {
     console.log('Failed to Delete', err);
