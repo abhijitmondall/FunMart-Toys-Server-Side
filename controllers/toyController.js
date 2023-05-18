@@ -3,6 +3,20 @@ const ApiFeatures = require('../utils/apiFeatures');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 
+const getReqBodyData = (req) => {
+  return {
+    toyPicture: req.body.toyPicture,
+    toyName: req.body.toyName,
+    sellerName: req.body.sellerName,
+    sellerEmail: req.body.sellerEmail,
+    subCategory: req.body.subCategory,
+    price: req.body.price,
+    ratings: req.body.ratings,
+    availableQuantity: req.body.availableQuantity,
+    description: req.body.description,
+  };
+};
+
 exports.getAllToys = catchAsync(async (req, res, next) => {
   const features = new ApiFeatures(Toy.find(), req.query)
     .filter()
@@ -34,20 +48,42 @@ exports.getToy = catchAsync(async (req, res, next) => {
 });
 
 exports.createToy = catchAsync(async (req, res, next) => {
-  const newToy = await Toy.create({
-    toyPicture: req.body.toyPicture,
-    toyName: req.body.toyName,
-    sellerName: req.body.sellerName,
-    sellerEmail: req.body.sellerEmail,
-    subCategory: req.body.subCategory,
-    price: req.body.price,
-    ratings: req.body.ratings,
-    availableQuantity: req.body.availableQuantity,
-    description: req.body.description,
-  });
+  const newToy = await Toy.create(getReqBodyData(req));
 
   res.status(201).json({
     status: 'success',
     toy: newToy,
+  });
+});
+
+exports.updateToy = catchAsync(async (req, res, next) => {
+  const toy = await Toy.findByIdAndUpdate(req.params.id, getReqBodyData(req), {
+    new: true,
+    runValidators: true,
+  });
+
+  if (!toy)
+    return next(
+      new AppError(`No toy found with this ID: ${req.params.id}`, 404)
+    );
+
+  res.status(200).json({
+    status: 'success',
+    toy,
+  });
+});
+
+exports.deleteToy = catchAsync(async (req, res, next) => {
+  const toy = await Toy.findByIdAndDelete(req.params.id);
+
+  if (!toy) {
+    return next(
+      new AppError(`No toy found with this ID: ${req.params.id}`, 404)
+    );
+  }
+
+  res.status(204).json({
+    status: 'success',
+    data: null,
   });
 });
