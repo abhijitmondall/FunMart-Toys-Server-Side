@@ -12,7 +12,6 @@ exports.getAllToys = catchAsync(async (req, res, next) => {
 
   const toys = await features.query;
 
-  // console.log(req.query);
   res.status(200).json({
     status: 'success',
     results: toys.length,
@@ -31,5 +30,24 @@ exports.getToy = catchAsync(async (req, res, next) => {
   res.status(200).json({
     status: 'success',
     toy,
+  });
+});
+
+exports.createToy = catchAsync(async (req, res, next) => {
+  const newToy = await Toy.create({
+    toyPicture: req.body.toyPicture,
+    toyName: req.body.toyName,
+    sellerName: req.body.sellerName,
+    sellerEmail: req.body.sellerEmail,
+    subCategory: req.body.subCategory,
+    price: req.body.price,
+    ratings: req.body.ratings,
+    availableQuantity: req.body.availableQuantity,
+    description: req.body.description,
+  });
+
+  res.status(201).json({
+    status: 'success',
+    toy: newToy,
   });
 });
