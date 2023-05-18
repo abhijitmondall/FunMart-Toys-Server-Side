@@ -17,6 +17,7 @@ const getReqBodyData = (req) => {
   };
 };
 
+// Get All Toys With Query
 exports.getAllToys = catchAsync(async (req, res, next) => {
   const features = new ApiFeatures(Toy.find(), req.query)
     .filter()
@@ -33,6 +34,7 @@ exports.getAllToys = catchAsync(async (req, res, next) => {
   });
 });
 
+// Get Toy By IDs
 exports.getToy = catchAsync(async (req, res, next) => {
   const toy = await Toy.findById(req.params.id);
 
@@ -47,6 +49,7 @@ exports.getToy = catchAsync(async (req, res, next) => {
   });
 });
 
+// Create Toy
 exports.createToy = catchAsync(async (req, res, next) => {
   const newToy = await Toy.create(getReqBodyData(req));
 
@@ -56,6 +59,7 @@ exports.createToy = catchAsync(async (req, res, next) => {
   });
 });
 
+// Update Toy
 exports.updateToy = catchAsync(async (req, res, next) => {
   const toy = await Toy.findByIdAndUpdate(req.params.id, getReqBodyData(req), {
     new: true,
@@ -73,6 +77,7 @@ exports.updateToy = catchAsync(async (req, res, next) => {
   });
 });
 
+// Delete Toy
 exports.deleteToy = catchAsync(async (req, res, next) => {
   const toy = await Toy.findByIdAndDelete(req.params.id);
 
