@@ -36,15 +36,19 @@ const toySchema = new mongoose.Schema({
   price: {
     type: Number,
     required: [true, 'A Toy must have a price!'],
+    min: 0,
   },
 
   ratings: {
     type: Number,
     default: 4.5,
+    min: 0,
+    max: 5,
   },
 
   availableQuantity: {
     type: Number,
+    min: 0,
   },
 
   description: {
