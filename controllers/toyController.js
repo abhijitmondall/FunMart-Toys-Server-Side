@@ -23,7 +23,8 @@ exports.getAllToys = catchAsync(async (req, res, next) => {
     .filter()
     .sort()
     .limitFields()
-    .paginate();
+    .paginate()
+    .search();
 
   const toys = await features.query;
 

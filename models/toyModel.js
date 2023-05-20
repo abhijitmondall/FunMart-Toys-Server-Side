@@ -7,6 +7,7 @@ const toySchema = new mongoose.Schema({
 
   toyName: {
     type: String,
+    index: true,
     trim: true,
     required: [true, 'A Toy must have a name!'],
   },
@@ -47,8 +48,14 @@ const toySchema = new mongoose.Schema({
     default: Date.now(),
     select: false,
   },
+
+  profile: {
+    something: String,
+    somethingElse: String,
+  },
 });
 
+toySchema.index({ toyName: 'text', 'profile.something': 'text' });
 const Toy = mongoose.model('Toy', toySchema);
 
 module.exports = Toy;

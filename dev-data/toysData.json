@@ -1,6 +1,6 @@
 [
   {
-    "toyPicture": "toy_car1.jpg",
+    "toyPicture": "https://i.ibb.co/DYNMXmp/racing-car-1.jpg",
     "toyName": "Super Speedster",
     "sellerName": "Toy World",
     "sellerEmail": "toyseller@example.com",
@@ -11,7 +11,7 @@
     "description": "Experience the thrill of speed with our Super Speedster racing car. This sleek and aerodynamic toy car is designed for high-performance racing. Its precision engineering ensures superior handling and speed. Perfect for racing enthusiasts and collectors alike, the Super Speedster will leave you craving for more adrenaline-pumping races."
   },
   {
-    "toyPicture": "toy_car2.jpg",
+    "toyPicture": "https://i.ibb.co/b5kzB3T/racing-car-2.jpg",
     "toyName": "Off-Road Explorer",
     "sellerName": "Adventure Toys",
     "sellerEmail": "adventuretoys@example.com",
@@ -22,7 +22,7 @@
     "description": "Embark on exciting off-road adventures with our Off-Road Explorer toy car. Built tough to conquer any terrain, this rugged vehicle features oversized wheels and a robust suspension system. Whether it's rocky mountains, sandy dunes, or muddy trails, the Off-Road Explorer will power through with ease, providing endless hours of off-road fun and exploration."
   },
   {
-    "toyPicture": "toy_car3.jpg",
+    "toyPicture": "https://i.ibb.co/4mGMnxZ/Trucks-1.jpg",
     "toyName": "Police Pursuit",
     "sellerName": "Kids Emporium",
     "sellerEmail": "kidsemp@example.com",
@@ -33,7 +33,7 @@
     "description": "Become a hero and chase down the bad guys with our Police Pursuit toy car. Equipped with flashing lights and realistic siren sounds, this police car provides an immersive play experience. The sleek design and detailed interior add to its authenticity. With its high-speed pursuit capabilities and accurate maneuverability, young law enforcement officers will feel unstoppable in their mission to maintain law and order."
   },
   {
-    "toyPicture": "toy_car4.jpg",
+    "toyPicture": "https://i.ibb.co/n1MVQB9/Trucks-2.jpg",
     "toyName": "Convertible Cruiser",
     "sellerName": "Fun Time Toys",
     "sellerEmail": "funtime@example.com",
@@ -44,7 +44,7 @@
     "description": "Cruise in style with our Convertible Cruiser toy car. This stunning convertible features a sleek and aerodynamic design that's sure to turn heads. With its open-top feature, young drivers can enjoy the wind in their hair as they hit the imaginary open road. The attention to detail in the interior and exterior design adds to the authenticity and provides a luxurious experience for little drivers."
   },
   {
-    "toyPicture": "toy_car5.jpg",
+    "toyPicture": "https://i.ibb.co/YtjQ1Dr/Convertible-4.jpg",
     "toyName": "Monster Truck Mayhem",
     "sellerName": "Toy Planet",
     "sellerEmail": "toyplanet@example.com",
@@ -55,7 +55,7 @@
     "description": "Get ready for some thrilling stunts and jumps with our Monster Truck Mayhem toy car. This colossal monster truck is built for extreme off-road action. Its large wheels, powerful suspension, and durable construction make it perfect for tackling rough terrains, crushing obstacles, and performing jaw-dropping stunts. Whether it's climbing over rocks, conquering dirt mounds, or smashing through barriers, the Monster Truck Mayhem delivers non-stop excitement and adrenaline-fueled fun."
   },
   {
-    "toyPicture": "toy_car6.jpg",
+    "toyPicture": "https://i.ibb.co/0Jdf6Ts/Convertible-3.jpg",
     "toyName": "Vintage Roadster",
     "sellerName": "Classic Toys",
     "sellerEmail": "classictoys@example.com",
