@@ -29,7 +29,7 @@ const toySchema = new mongoose.Schema({
     enum: {
       values: ['Racing Cars', 'Convertible Cars', 'Monster Trucks'],
       message:
-        'A Toy must have a category either: Racing Cars, Convertible Cars, Monster Trucks!',
+        'A Toy must have a category either: (Racing Cars, Convertible Cars, Monster Trucks)!',
     },
   },
 

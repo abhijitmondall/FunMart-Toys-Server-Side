@@ -3,6 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 
 const toyRouter = require('./routes/toyRoutes');
+const blogRouter = require('./routes/blogRoutes');
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
 
@@ -18,6 +19,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/v1/toys', toyRouter);
+app.use('/api/v1/blogs', blogRouter);
 
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on the server!`, 404));
