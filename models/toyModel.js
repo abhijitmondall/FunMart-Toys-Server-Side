@@ -22,7 +22,15 @@ const toySchema = new mongoose.Schema({
 
   subCategory: {
     type: String,
-    required: [true, 'A Toy must have a category!'],
+    required: [
+      true,
+      'A Toy must have a category either: Racing Cars, Convertible Cars, Monster Trucks!',
+    ],
+    enum: {
+      values: ['Racing Cars', 'Convertible Cars', 'Monster Trucks'],
+      message:
+        'A Toy must have a category either: Racing Cars, Convertible Cars, Monster Trucks!',
+    },
   },
 
   price: {

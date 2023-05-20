@@ -6,6 +6,12 @@ const handleDBCastError = (err) => {
   return new AppError(message, 400);
 };
 
+const handleValidationError = (err) => {
+  const message = `${err.message}`;
+
+  return new AppError(message, 400);
+};
+
 const sendErrorDev = (err, res) => {
   res.status(err.statusCode).json({
     status: err.status,
@@ -41,6 +47,7 @@ module.exports = (err, req, res, next) => {
     let error = err;
 
     if (error.name === 'CastError') error = handleDBCastError(error);
+    if (error.name === 'ValidationError') error = handleValidationError(error);
 
     sendErrorProd(error, res);
   }
