@@ -36,7 +36,7 @@ const toySchema = new mongoose.Schema({
   },
 
   availableQuantity: {
-    type: String,
+    type: Number,
   },
 
   description: {
